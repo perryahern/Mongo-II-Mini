@@ -16,7 +16,7 @@ server.get('/', function(req, res) {
   res.status(200).json({ api: 'running' });
 });
 
-mongoose.connect('mongodb://localhost/library').then(
+mongoose.connect('mongodb://localhost/cs6').then(
   () => {
     const port = process.env.PORT || 3000;
     server.listen(port);
